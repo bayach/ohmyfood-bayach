@@ -1,0 +1,1530 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+*{
+    box-sizing: border-box;
+   /* box-sizing est appliqué à tous les éléments */
+   }
+/* Eléments principaux de la page */
+#format_page
+{
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    
+    max-width: 1390px;
+}
+body
+{
+  margin: 0px 0px 0px 0px;
+}
+/*****Titre et logo Booki*******/
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    box-sizing: border-box;
+    width: 100%;
+
+}
+#titre h1
+{
+    font-size: 22px;
+    font-weight: bold ;
+	  margin: 10px 0px 0px 0px;
+}
+#titre p
+{
+    font-size: 103%;
+    margin-top: 8px;
+    font-weight: 400;
+}
+#logo img
+{
+    margin: 45px 0px 20px 15px;
+    width: 92px;
+    height: 46px;
+}
+
+/*****menu de navigation*****/
+nav ul
+{
+	list-style-type: none;
+	display: flex;
+  margin-top: 0px;
+}
+#heberg
+{
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 50px;
+  margin-right: 40px;
+}
+#activ
+{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 50px;
+  margin-right: 10px;
+}
+nav a
+{
+    font-size: 17px;
+    font-weight: 500;
+    color: #181818;
+    text-decoration: none;
+}
+nav li:hover 
+{
+    border-top: 3px solid #0065FC;
+}
+nav a:hover
+{
+  color: #0065FC;
+}
+ /*******barre de recherche********/
+ #recherche
+ {
+    box-sizing: border-box;
+     width: 420px;
+     display: flex;
+     margin-top: 5px;
+     margin-bottom: 15px;    
+ }
+ #recherche button
+ {
+     font-size: 19px;
+     color: white;
+     background-color: #0065FC ;
+     width: 135px;
+     padding: 15px 10px 15px 10px;
+     border: none;
+     border-color: #F2F2F2;      
+     border-radius: 0px 15px 15px 0px;   
+ }
+
+ #recherche label
+ {
+     color: black;
+ }
+ #search
+ {
+    font-family: 'Raleway', sans-serif;
+    width: 230px;
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+    border-left: none;
+    border-right: none;
+    padding: 10px 1px 10px 15px;
+
+ }
+ #recherche i
+ {
+     box-sizing: border-box;
+     width: 55px;
+     padding: 16px 20px 16px 20px;
+     margin: 0px 0px 0px 0px;
+     align-self: center;
+     font-size: 18px;
+     background-color: #F2F2F2;
+     border-radius: 15px 0px 0px 15px;   
+ }
+
+ /******** filtre **********/
+#filtre
+{
+    display: flex;
+    padding-left: 0px;
+    margin-right: 0px;
+    margin: 30px 0px 25px 0px;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+#filtre .titre 
+{
+  box-sizing: border-box;
+  margin: 0px 10px 0px 5px;
+  height: 50px;
+  padding: 12px 0px 0px 0px;
+  font-size: 18px;
+  font-weight: 700;
+  border: none;
+}
+#filtre .list-filtre
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+#filtre p
+{
+    box-sizing: border-box;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    padding-top: 12px;
+    padding-left: 35px;
+    padding-right: 20px; 
+    border-top: 2px solid #d8d6d6b0;
+    border-bottom: 2px solid #d8d6d6b0;
+    border-right: 2px solid #d8d6d6b0;
+    margin: 0px 0px 0px 0px;
+    border-radius: 0px 25px 25px 0px;
+}
+#animals p
+{
+  width: 220px;
+}
+
+ #filtre  a
+ {
+    display: block;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+ }
+ #filtre a:hover 
+ {
+     color: #0065FC;
+     
+ }
+ /*filtre economique*/
+ #money
+ {
+     position: relative;
+     bottom: 0px;
+     right: -23px;
+     color: #0065FC;
+     background-color: #dfebff;
+     height: 50px;
+     width: 50px;
+     border-radius: 25px;
+     margin-right: 0px;
+ }
+
+ #money i
+ {
+    font-size: 17px;
+    position: relative;
+    top: 16px;
+    left: 15px;
+ }
+
+ /*filtre Familial*/
+ #logo-fam
+ {
+    position: relative;
+    bottom: 0px;
+    right: -23px;
+    color: #0065FC;
+    background-color: #dfebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 0px;
+ }
+
+ #logo-fam i
+ {
+    font-size: 19px;
+    position: relative;
+    top: 15px;
+    left: 17px;
+ }
+
+ /*filtre Romantique*/
+ #coeur
+ {
+    position: relative;
+    bottom: 0px;
+    right: -23px;
+    color: #0065FC;
+    background-color: #dfebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 0px;
+ }
+
+#coeur i
+ {
+   font-size: 20px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+ }
+
+ /*filtre Animaux autorisé*/
+ #chien
+ {
+    position: relative;
+    bottom: 0px;
+    right: -23px;
+    color: #0065FC;
+    background-color: #dfebff;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-right: 0px;
+ }
+
+#chien i
+ {
+   font-size: 19px;
+    position: relative;
+    top: 14px;
+    left: 15px;
+ }
+
+ /*******info*********/
+ #info
+ {
+     display: flex;
+     align-items: center;
+ }
+ #logo-info
+ {
+     border: 1px solid #d8d6d6b0 ;
+     height: 20px;
+     width: 20px;
+     border-radius: 10px;
+ }
+ #logo-info i
+ {
+     font-size: 10px;
+     font-weight: 900;
+     color: #0065FC;
+     position: relative;
+     width: 10px;
+     bottom: 3.5px;
+     left: 7.5px;
+ }
+ #info p
+ {
+    font-size: 16px;
+    font-weight: 500;
+     padding-top: 2px;
+     margin-left: 13px;
+ }
+ .fa-stack.small
+  { 
+    font-size: 11px;
+    
+  }
+  .i-info 
+  {
+     vertical-align: middle; 
+     color: #0065FC;
+  }
+ .circle-info
+ {
+   color: #d6d6d6;
+   font-weight: 100;
+   
+ }
+
+ /* -------Carte hebergement marseille-------*/
+ /*Gestion de la section qui comporte l'Aricle et le Aside*/
+ section
+ {
+    margin-top: 20px;
+     display: flex;
+     padding-left: 05px;
+     width: 100%;   
+ }
+ article
+ {
+     display: flex;
+     box-sizing: border-box;
+     background-color: #F2F2F2;
+     flex-direction: column;
+     height: 640px;
+     width: 885px;
+     border-radius: 23px 23px 23px 23px;
+     margin-left: 0px;
+     padding-left: 0px;
+     
+ }
+ #photo-hebergement-1, #photo-hebergement-2
+ {
+     margin: 13px 0px 20px 42px;
+     display: flex;   
+ }
+ article h3
+ {
+  margin: 20px 0px 20px 42px;   
+}
+ article h1
+ {
+    margin: 42px 0px 7px 42px;
+    font-size: 22px;
+    font-weight: 700;
+ }
+
+ aside
+ {
+    display: flex;
+    margin-left: 40px;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    height: 640px;
+    width: 430px;
+    border-radius: 23px 23px 23px 23px;
+ }
+ 
+ #photo-populaire
+ {
+     box-sizing: border-box;
+     height: 560px;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     margin-top: 0px;
+ }
+ 
+
+ /*carte Hébergement à marseille colomne 1*/
+ .carte-cannebiere, .carte-hotel-port, .carte-mouettes
+ {
+    width: 248px; 
+    box-sizing: border-box;
+    height: 205px;
+    margin-right: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 5px rgb(197, 196, 196); 
+    border-radius: 20px 20px 20px 20px;
+    
+  }
+  .carte-cannebiere a, .carte-hotel-port a, .carte-mouettes a
+  { 
+    color: #333; 
+    text-decoration: none;
+  }
+  .carte-cannebiere:hover .cannebiere img, .carte-hotel-port:hover .hotel-port img, .carte-mouettes:hover .mouettes img
+  { 
+    width: 100%;
+  }
+
+  .cannebiere, .hotel-port, .mouettes
+  {
+    margin: 0px 5px 0px 5px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    top: 4px;
+    border-radius: 18px 18px 0 0;
+  }
+  .cannebiere img, .hotel-port img, .mouettes img
+  {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  /*cartes hebegement à marseille colomne 2*/
+
+ .carte-hotel-mer, .carte-le-panier, .carte-hotel-amina
+ {
+    box-sizing: border-box; 
+    width: 248px; 
+    height: 205px;
+    margin-right: 30px; 
+    background-color: white; 
+    box-shadow: 0px 5px 5px rgb(197, 196, 196); 
+    border-radius: 20px 20px 20px 20px;
+  }
+.carte-hotel-mer a, .carte-le-panier a, .carte-hotel-amina a
+  { 
+    color: #333; 
+    text-decoration: none;
+  }
+  .carte-hotel-mer:hover .mer a, .carte-le-panier:hover .le-panier a, .carte-hotel-amina:hover .hotel-amina a
+  { 
+    width: 30%;
+  }
+
+.mer, .le-panier, .hotel-amina
+  {
+    box-sizing: border-box;
+    margin: 0px 5px 0px 5px;
+    height: 120px;
+    position: relative;
+    overflow: hidden;
+    top: 4px;
+    border-radius: 18px 18px 0 0;
+  }
+  .mer img 
+  {
+    position: relative;
+    bottom: 50px;
+    width: 100%;
+    object-fit: cover;
+  } 
+  .le-panier img
+  {
+    position: relative;
+    bottom: 10px;
+    width: 100%;
+    object-fit: cover;
+  } 
+  .hotel-amina img
+  {
+    position: relative;
+    bottom: 120px;
+    width: 100%;
+    object-fit: cover;
+  }
+  /*format carte hebergement à marseille*/
+  article .format-carte
+  {
+    
+    margin-left: 10px;
+    padding: 0px 0px; 
+    box-sizing: border-box; 
+    height: 70px;
+  }
+  article .titre-carte h3
+  {
+      box-sizing: border-box;
+      padding-top: 0px;
+      font-size: 16px;
+      font-weight: 800;
+      margin-top: 15px ;
+      margin-bottom: 5px;
+      margin-left: 5px;
+  }
+  article .prix-carte p
+  {
+      position: relative;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 5px;
+      margin-bottom: 18px;
+      margin-left: 5px;
+
+  }
+  article .note-carte
+  {
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    bottom: 25px;
+    margin-left: 5px;
+  }
+  article .note-carte .bleu
+  {
+      color: #0065FC;
+  }
+  article .note-carte .gris
+  {
+      color: rgb(209, 209, 209);
+  }
+
+
+ /*******cartes Hébergement les plus populaires***********/
+ .plus-pop
+ {
+   box-sizing: border-box;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 382px;
+   
+ }
+ aside h1
+ {
+    margin: 42px 0px 30px 42px;
+    font-size: 22px;
+    font-weight: 800;
+
+ }
+ .plus-pop i
+ {
+   font-size: 22px;
+   font-weight: bold;
+ }
+ .carte-soleil-matin, .carte-chambre-hotes, .carte-bleu-blanc
+ {
+    box-sizing: border-box; 
+    width: 340px; 
+    height: 145px;
+    margin: 0 5px 0px 42px;
+    margin-bottom: 40px; 
+    background-color: white; 
+    box-shadow: 0px 5px 5px rgb(197, 196, 196); 
+    border-radius: 20px 20px 20px 20px;
+  }
+  .carte-soleil-matin a, .carte-chambre-hotes a, .carte-bleu-blanc a
+  { 
+    display: flex;
+    color: #333; 
+    text-decoration: none;
+  }
+  .carte-hotel-soleil:hover .soleil-matin a, .carte-chambre-hotes:hover .chambre-hotes a, .carte-bleu-blanc:hover .bleu-blanc a
+  { 
+    width: 100%;
+  }
+  .soleil-matin, .chambre-hotes, .bleu-blanc
+  {
+    box-sizing: border-box;
+    margin: 5px 5px 5px 5px;
+    width: 125px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .soleil-matin img, .chambre-hotes img, .bleu-blanc img
+  {
+    box-sizing:border-box ;
+    width: 100%;
+    height: 135px;
+    object-fit: cover;
+    border-radius: 20px 0px 0px 20px;
+  }
+/*format carte hebergement les plus populaires*/
+aside .format-carte
+{
+    box-sizing: border-box;
+    margin-left: 10px;
+    padding: 0px 0px; /*2*/
+    box-sizing: border-box; /*3*/
+    width: 50%;
+}
+aside .titre-carte h3
+{
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+aside .prix-carte p
+{
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 0px 40px 0px;
+
+}
+.carte-soleil-matin .note-carte,.carte-bleu-blanc .note-carte
+{
+  position: relative;
+  font-size: 12px;
+  display: flex;
+  bottom: 5px;
+}
+.carte-chambre-hotes .note-carte
+{
+    position: relative;
+    font-size: 12px;
+    display: flex;
+    bottom: 5px;
+}
+aside .note-carte .bleu
+{
+    color: #0065FC;
+}
+aside .note-carte .gris
+{
+  color: rgb(209, 209, 209);
+}
+
+
+
+/* -------Carte Acitvités marseille-------*/
+ /*Gestion de la section qui comporte les conteneurs titre et photos activité à marseille*/
+
+ #activite
+ {
+    margin: 10px 0px 25px 42px ;
+    font-size: 22px;
+    font-weight: 800;
+ }
+ .activite-marseille
+ {
+   display: flex;
+   flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 50px;
+    margin-bottom: 65px;
+    height: 100%;
+    
+ }
+
+ .photo-activite-tab
+ {
+   display: none;
+ }
+ 
+.photo-activite
+{
+  display: flex;
+    box-sizing: border-box;
+    display: flex;
+    height: 430px;   
+    
+}   
+
+
+ /*cartes grand format des activités à marseille  */
+ .carte-vieux-port, .carte-parc-calanques
+ {
+    box-sizing: border-box;
+    height: 100%;
+    width: 400px; 
+    overflow: hidden;
+    background-color: white; 
+    box-shadow: 0px 5px 5px rgb(230, 230, 230); 
+    border-radius: 20px 20px 20px 20px;
+    margin-right: 40px;
+  }
+  .carte-vieux-port a, .carte-parc-calanques a
+  { 
+    color: #333; 
+    text-decoration: none;
+  }
+  .carte-vieux-port:hover .vieux-port a,.carte-parc-calanques:hover .parc-calanques
+  { 
+    width: 100%;
+  }
+  .vieux-port,.parc-calanques
+  {
+    height: 375px;
+    position: relative;
+    overflow: hidden;
+    
+  }
+  .vieux-port img
+  {
+    box-sizing: border-box;
+    position: relative;
+    right: 200px;
+    bottom: 30px; 
+  }
+  .parc-calanques img
+  {
+    box-sizing: border-box;
+    position: relative;
+    
+    right: 205px;
+    bottom: 30px; 
+  }
+
+  /*titre carte activité grand format */
+  .carte-vieux-port h3,.carte-parc-calanques h3
+  {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0px 0px 20px;
+  }
+  /*carte petit format des activités à marseille  */
+  .conteneur-photos-1
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 40px;
+}
+.conteneur-photos-2
+{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    margin-right: 20px;
+}
+  .carte-fort-pomegues
+  {
+     box-sizing: border-box;
+     height: 55%;
+     width: 100%; 
+     overflow: hidden;
+     background-color: white; 
+     box-shadow: 0px 5px 5px rgb(230, 230, 230); 
+     border-radius: 20px 20px 20px 20px;
+     margin-right: 10px;
+     margin-bottom: 20px;
+   }
+   .carte-ile-frioul
+   {
+      box-sizing: border-box;
+      height: 40%;
+      width: 100%;
+      overflow: hidden;
+      background-color: white; 
+      box-shadow: 0px 5px 5px rgb(230, 230, 230); 
+      border-radius: 20px 20px 20px 20px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+    .carte-notre-dames
+   {
+      box-sizing: border-box;
+      height: 50%;
+      width: 100%;
+      overflow: hidden;
+      background-color: white; 
+      box-shadow: 0px 5px 5px rgb(230, 230, 230); 
+      border-radius: 20px 20px 20px 20px;
+      margin-bottom: 30px;
+    }
+    .carte-parc-longchamp
+    {
+      box-sizing: border-box;
+      height: 50%;
+      width: 100%;
+      overflow: hidden;
+      background-color: white; 
+      box-shadow: 0px 5px 5px rgb(230, 230, 230); 
+      border-radius: 20px 20px 20px 20px;
+      margin-top: 15px;
+      }
+    .carte-fort-pomegues a, .carte-ile-frioul a,.carte-notre-dames a, .carte-parc-longchamp a 
+   { 
+     color: #333; 
+     text-decoration: none;
+   }
+   .carte-fort-pomegues:hover .fort-pomegues a,.carte-ile-frioul:hover .ile-frioul a,
+   .carte-notre-dames:hover .notre-dames a, .carte-parc-longchamp:hover .parc-longchamp a
+   { 
+     width: 100%;
+   }
+   .fort-pomegues
+   {
+     height: 175px;
+     position: relative;
+     overflow: hidden;
+   }
+   .ile-frioul
+   {
+    height: 110px;
+    position: relative;
+    overflow: hidden;
+  }
+   .notre-dames
+   {
+    height: 135px;
+    position: relative;
+    overflow: hidden;
+  }
+  .parc-longchamp
+  {
+    height: 135px;
+    position: relative;
+    overflow: hidden;
+  }
+   
+   .fort-pomegues img, .notre-dames img
+   {
+     height: 155%;
+     width: 100%;
+   }
+   .ile-frioul img
+   {
+    position: relative;
+    height: 155%;
+    width: 100%;   
+   }
+   .parc-longchamp img
+   {
+    position: relative;
+    height: 155%;
+    width: 100%;  
+    bottom: 15px; 
+   }
+/*titre carte activité petit format */
+.carte-fort-pomegues h3
+{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0px 0px 20px;
+}
+.carte-ile-frioul h3
+{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0px 0px 20px;
+}
+.carte-notre-dames h3
+{
+    font-size: 16px;
+    font-weight: 700;
+    margin: 20px 0px 0px 20px;
+}
+.carte-parc-longchamp h3
+{
+  font-size: 16px;
+  font-weight: 700;
+  margin: 20px 0px 0px 20px;
+}
+  /*********gestion du footer**********/
+footer
+{
+    width: 100%;
+}
+#pied-page
+{
+    display: flex;
+    background-color: #F2F2F2;
+    align-content: space-between;
+}
+#pied-page h3
+{
+  margin-top: 40px;
+}
+#propos
+{
+    margin-left: 55px;
+    box-sizing: border-box;
+    width: 50%;
+    margin-bottom: 40px;
+}
+#hebergement
+{
+    box-sizing: border-box;
+    width: 50%;
+}
+#assistance
+{
+    box-sizing: border-box;
+    width: 50%;
+}
+
+
+
+/***************media pour version mobile******************/
+@media only screen and (max-width: 768px) {
+  #format_page
+{
+    margin: auto;
+    width: 360px;
+}
+  header{
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width:300px;
+    align-items: center;
+}
+#logo img
+{
+  margin-top: 30px;
+}
+#titre h1
+{
+	  margin: 10px 0px 0px 0px;
+}
+#heberg
+{
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 80px 15px 20px;
+}
+#activ
+{
+  box-sizing: border-box;
+  width: 50%;
+  margin: 0px 0px 0px 0px;
+  padding: 10px 20px 15px 40px;
+}
+nav ul
+{
+  padding-left: 0px;
+}
+nav li
+{
+  border-bottom: 3px solid #F2F2F2;
+}
+nav li:hover 
+{
+  
+  border-top: none;
+  border-bottom: 3px solid #0065FC;
+}
+nav a:hover
+{
+  color: #0065FC;
+}
+#bouton
+{
+  display: none;
+}
+#icon-search i
+ {
+     position: relative;
+     box-sizing: border-box;
+     width: 50px;
+     padding: 16px 16px 16px 16px;
+     margin: 0px 0px 0px 0px;
+     align-self: center;
+     font-size: 18px;
+     background-color: #0065FC;
+     border-radius: 15px 15px 15px 15px;   
+     color: white;
+     right: 15px;
+ }
+ #filtre
+ {
+   flex-direction: column;
+   align-items:flex-start;
+   margin-bottom: 10px;
+ }
+ #filtre .list-filtre
+ {
+   flex-wrap: wrap;
+ }
+ #filtre a
+ {
+   margin-left: -18px;
+   margin-bottom: 15px;
+ }
+ section
+ {
+   flex-direction: column-reverse;
+   margin-left: -10px;
+   margin-right: -10px;
+
+ }
+ 
+ article,aside
+ {
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   margin-left: 0px;
+   margin-right: 0px;
+   align-items: flex-start;
+   border-radius: 0px 0px 0px 0px;
+ }
+ aside h1
+ {
+   margin-left: 0;
+   margin-top: 15px;
+   margin-bottom: 15px;
+   min-width: 318px;
+ }
+ 
+ #photo-populaire
+ {
+   justify-content: flex-start;
+   height: 100%;
+ }
+ .plus-pop
+ {
+   margin: 10px 0px 15px 20px;
+   width: 340px;
+   align-content: center;
+ }
+ .carte-soleil-matin, .carte-chambre-hotes
+ {
+  margin: 00px 0px 20px 20px;
+ }
+.carte-bleu-blanc
+ {
+  margin: 0px 0px 40px 20px;
+   
+ }
+
+ article
+ {
+   margin-top: 20px;
+   background-color: white;
+ }
+ article h1
+ {
+  margin-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  min-width: 318px;
+ }
+ article h3
+ {
+  margin-left: 20px;
+ }
+ #photo-hebergement-1, #photo-hebergement-2
+ {
+   margin-left: 20px;
+   margin-top: 0px;
+   margin-bottom: 0px;
+   flex-direction: column;
+ }
+ #photo-hebergement-1 img
+ {
+   position: relative;
+   bottom: 40px;
+ }
+ .mer img 
+  {
+    position: relative;
+    bottom: 90px;
+    width: 100%;
+  } 
+  .hotel-amina img
+  {
+    position: relative;
+    bottom: 180px;
+    width: 100%;
+  }
+ .carte-cannebiere, .carte-hotel-port, .carte-mouettes,.carte-hotel-mer, .carte-le-panier, .carte-hotel-amina
+ {
+   margin-bottom: 10px;
+    width: 340px; 
+    height: 205px;
+ }
+ .activite-marseille
+ {
+   height: 100%;
+   width: 100%;
+   margin-left: 10px;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ .photo-activite
+ {
+   flex-direction: column;
+   height: 100%;
+   width: 340px;
+ }
+ .carte-vieux-port,.carte-parc-calanques,.carte-fort-pomegues,.carte-ile-frioul,.carte-notre-dames,.carte-parc-longchamp
+ {
+   width: 340px;
+   margin-bottom: 20px;
+   margin-top: 0px;
+ }
+ .carte-vieux-port img,.carte-parc-calanques img,
+ .carte-ile-frioul img,.carte-notre-dames img,.carte-parc-longchamp img
+ {
+  width: 100%;
+  height: 145%;
+  left: 0px;
+  bottom: 0px;
+}
+ .carte-fort-pomegues img
+ {
+   position: relative;
+  width: 110%;
+  height: 300%;
+  right: 10px;
+  bottom: 100px;
+}
+
+ .vieux-port,.parc-calanques,.fort-pomegues,.ile-frioul,.notre-dames,.parc-longchamp
+  {
+    height: 130px;
+  }
+  .activite-marseille h3
+  {
+    height: 35px;
+  }
+
+  footer
+  {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  #pied-page
+
+  {
+    margin-left: -20px;
+    flex-direction: column;
+  }
+  #pied-page h3
+  {
+    margin: 0px 0px 20px 0px;
+  }
+  #pied-page p
+  {
+    margin: 13px 0px 13px 0px;
+  }
+  #propos
+  {
+    margin-top: 40px;
+  }
+#propos, #hebergement, #assistance
+ {
+    margin-left: 40px;
+    margin-bottom: 35px;
+    width: 100%;
+ }
+
+}
+/*******************media pour version tablette ************************/
+
+@media only screen and (min-width: 769px) and (max-width: 992px)
+{
+  #format_page
+  {
+      margin: auto;
+      width: 765px;
+  }
+  #filtre
+  {
+    margin-right: 15px;
+  }
+  #filtre .list-filtre
+  {
+    margin-left: -20px;
+  }
+  #animals
+  {
+    margin-top: 20px;
+  }
+  section
+ {
+   margin-right: 5px;
+    flex-direction: column;
+    width: 760px;
+ }
+ article
+ {
+    width: 760px; 
+    margin-bottom: 30px;   
+    margin-left: 0px;
+ }
+ .le-panier img
+ {
+   width: 110%;
+   height: 110%;
+ }
+ aside
+ {
+   width: 760px;
+   height: 100%;
+   margin-left: 0px;
+   
+ }
+ aside img
+ {
+   position: relative;
+   bottom: 40px;
+   right: 50px;
+ }
+ #photo-populaire
+ {
+   box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  width: 725px;
+  height: 100%;
+  margin-right: 10px;
+  margin-left: 20px;
+ }
+ .plus-pop
+ {
+   width: 725px;
+   margin-right: 0px;
+ }
+ .carte-soleil-matin, .carte-chambre-hotes, .carte-bleu-blanc
+ {
+   
+    width: 240px; 
+    height: 230px;
+    margin: 0 25px 0px 0px;
+    margin-bottom: 20px; 
+    
+  }
+  .carte-soleil-matin a, .carte-chambre-hotes a, .carte-bleu-blanc a
+  { 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
+  .soleil-matin, .chambre-hotes, .bleu-blanc
+  {
+    width: 96%;
+    height: 130px;
+    border-radius: 20px 20px 0px 0px;
+  
+  }
+  .soleil-matin img, .chambre-hotes img, .bleu-blanc img
+  {
+    margin-right: 0px;
+    width: 150%;
+    height: 150%;
+  }
+  .bleu-blanc img
+  {
+    position: relative;
+    right: 70px;
+  }
+
+aside .format-carte
+{
+    width: 100%;
+    height: 50%;
+}
+aside h3
+{
+  margin-top: 0px;
+}
+aside .prix-carte p
+{
+  margin-bottom: 20px;
+}
+.carte-chambre-hotes .prix-carte p
+{
+  margin-bottom: 2px;
+}
+ .activite-marseille
+ {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   margin: auto;   
+ }
+ .photo-activite
+ {
+  display: none;
+ }
+ .photo-activite-tab
+ {
+   display: flex;
+   flex-wrap: wrap;
+   
+ }
+ .carte-vieux-port,.carte-parc-calanques
+ {
+   width: 240px;
+   margin: 10px 10px 20px 10px;
+ }
+ .carte-fort-pomegues,.carte-notre-dames
+ {
+  width: 240px;
+  margin: 10px 10px 20px 0px;
+ }
+ .carte-parc-longchamp,.carte-ile-frioul
+ {
+  width: 240px;
+   margin-right: 10px;
+ }
+ .carte-vieux-port img,.carte-parc-calanques img,
+ .carte-ile-frioul img,.carte-notre-dames img,.carte-parc-longchamp img
+ {
+  width: 100%;
+  height: 145%;
+  left: 0px;
+  bottom: 0px;
+}
+ .carte-fort-pomegues img
+ {
+   position: relative;
+  width: 110%;
+  height: 300%;
+  right: 10px;
+  bottom: 100px;
+}
+
+ .vieux-port,.parc-calanques,.fort-pomegues,.ile-frioul,.notre-dames,.parc-longchamp
+  {
+    height: 130px;
+  }
+  .activite-marseille h3
+  {
+    height: 35px;
+  }
+
+}
+/*media pour version ordinateur*/
+@media only screen and (min-width: 769px)
+{
+  #icon-search
+  {
+    display: none;
+  }
+  
+}
+@media only screen and (min-width: 993px) and (max-width: 1265px)
+{
+  #format_page
+  { 
+    max-width: 950px;
+    margin: auto;
+  }
+  section
+  {
+    margin-right: 5px;
+     flex-direction: column;
+  }
+  article
+  {
+     width: 100%; 
+     margin-bottom: 30px;   
+     margin-left: 0px;
+  }
+  .carte-cannebiere, .carte-hotel-port, .carte-mouettes,
+  .carte-hotel-mer, .carte-le-panier, .carte-hotel-amina
+  {
+    width: 100%;
+  }
+  article #photo-hebergement-1 img
+  {
+    position: relative;
+    bottom: 30px;
+  }
+  .mer img,.hotel-amina img
+  {
+    position: relative;
+    bottom: 80px;
+  }
+  .hotel-amina img
+  {
+    position: relative;
+    bottom: 130px;
+  }
+  aside
+  {
+    width: 100%;
+    height: 100%;
+    margin-left: 0px;
+    
+  }
+  #photo-populaire
+  {
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   height: 100%;
+  }
+  .plus-pop
+  {
+    box-sizing: border-box;
+    width: 900px;
+    
+  }
+  .carte-soleil-matin
+  {
+    
+    width: 265px; 
+    height: 230px;
+    margin: 0 25px 20px 42px; 
+    
+  }
+  .carte-chambre-hotes, .carte-bleu-blanc
+  {
+    
+     width: 265px; 
+     height: 230px;
+     margin: 0 40px 20px 0px; 
+     
+   }
+   .carte-soleil-matin a, .carte-chambre-hotes a, .carte-bleu-blanc a
+   { 
+     display: flex;
+     flex-direction: column;
+     overflow: hidden;
+   }
+   .soleil-matin, .chambre-hotes, .bleu-blanc
+   {
+     width: 96%;
+     height: 130px;
+     border-radius: 20px 20px 0px 0px;
+   
+   }
+   .soleil-matin img, .chambre-hotes img, .bleu-blanc img
+   {
+    /* margin-right: 40px;
+     width: 150%;
+     height: 150%;*/
+     object-fit: cover;
+   }
+ 
+ aside .format-carte
+ {
+     width: 100%;
+     height: 50%;
+ }
+ aside h3
+ {
+   margin-top: 0px;
+ }
+ aside .prix-carte p
+ {
+   margin-bottom: 20px;
+ }
+ .carte-chambre-hotes .prix-carte p
+ {
+   margin-bottom: 2px;
+ }
+ .activite-marseille
+ {
+   display: flex;
+   flex-direction: column;
+   height: 100%;
+   width: 100%;
+   margin: auto;   
+ }
+ .photo-activite
+ {
+  display: none;
+ }
+ .photo-activite-tab
+ {
+   display: flex;
+   flex-wrap: wrap;
+   
+ }
+ .carte-vieux-port,.carte-parc-calanques
+ {
+   width: 295px;
+   margin: 10px 10px 20px 10px;
+ }
+ .carte-fort-pomegues,.carte-notre-dames
+ {
+  width: 295px;
+  margin: 10px 10px 20px 0px;
+ }
+ .carte-parc-longchamp,.carte-ile-frioul
+ {
+  width: 295px;
+   margin-right: 10px;
+ }
+ .carte-vieux-port img,.carte-parc-calanques img,
+ .carte-ile-frioul img,.carte-notre-dames img,.carte-parc-longchamp img
+ {
+  width: 100%;
+  height: 145%;
+  left: 0px;
+  bottom: 0px;
+}
+img
+{
+  object-fit: cover;
+}
+ .carte-fort-pomegues img
+ {
+   position: relative;
+  width: 110%;
+  height: 300%;
+  right: 10px;
+  bottom: 100px;
+}
+
+ .vieux-port,.parc-calanques,.fort-pomegues,.ile-frioul,.notre-dames,.parc-longchamp
+  {
+    height: 130px;
+  }
+  .activite-marseille h3
+  {
+    height: 35px;
+  }
+}
+
+@media only screen and (min-width: 1265px) and (max-width: 1331px)
+{
+  aside, aside h1
+  {
+    margin-left: 20px;
+  }
+  #photo-hebergement-1, #photo-hebergement-2, #photo-populaire, .carte-soleil-matin, .carte-chambre-hotes, .carte-bleu-blanc
+  {
+    margin: auto;
+  }
+}
+  @media only screen and (min-width: 1265px) and (max-width: 1420px)
+{
+  #format_page
+  {
+    margin-left: 15px;
+  }
+}
