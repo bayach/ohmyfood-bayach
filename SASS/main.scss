@@ -1,0 +1,7 @@
+@import "./abstracts/mixins.scss", "./abstracts/variables.scss";
+@import "./Base/typography", "./Base/reset", "./Base/normalize.scss";
+@import "./Components/btn","./components/carousel.scss","./components/cover.scss","./components/dropdown.scss";
+@import "./layout/footer.scss","./layout/forms.scss","./layout/grid.scss","./layout/header.scss","./layout/navigation.scss","./layout/sidebar.scss";
+@import "./pages/home.scss","./pages/resto.scss";
+@import "./themes/admin.scss","./themes/theme.scss";
+@import "./vendors/bootstrap.scss";
