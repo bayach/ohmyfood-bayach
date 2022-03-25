@@ -1,8 +1,21 @@
+@charset "UTF-8";
+/*Annulation decoration texte bouton*/
 a {
   text-decoration: none;
 }
 
-/*variable couleur pages*/
+/* annulation paramètre sur toutes les balises*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+/*annulation decaration texte cliquable*/
+a {
+  text-decoration: none;
+}
+
+/*bouton explorer page accueil*/
 .button-home {
   display: block;
   width: max-content;
@@ -11,6 +24,18 @@ a {
   color: white;
   border-radius: 30px;
   padding: 15px 20px;
+  font-weight: bold;
+}
+
+/*Animation coeur resto favoris page accueil */
+.carte__resto__coeur {
+  font-size: 20px;
+  color: grey;
+}
+.carte__resto__coeur:hover {
+  background: #FF79DA;
+  color: #FF79DA;
+  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 
@@ -51,6 +76,7 @@ a {
   font-weight: 700;
 }
 
+/*texte pour reservation resto*/
 .titrehome {
   padding: 40px 30px 55px 30px;
   background-color: #ebebeb;
@@ -68,6 +94,84 @@ a {
   text-align: center;
   margin-bottom: 30px;
   width: 80%;
+}
+
+/*section fonctionnement reservation plats dans le resto de notre choix*/
+.fonctionnement {
+  padding: 55px 20px 45px 20px;
+}
+.fonctionnement__titre {
+  margin-bottom: 30px;
+}
+
+.etape {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 70px 0 30px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.etape__icone {
+  margin-right: 15px;
+  color: #726b6b;
+}
+.etape__num {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -45px;
+  color: white;
+}
+
+/*section cartes restauarants*/
+.resto {
+  padding: 55px 20px 45px 20px;
+  background-color: #e6e3e3;
+}
+.resto__titre {
+  margin-bottom: 30px;
+}
+
+.carte__resto {
+  position: relative;
+  height: 250px;
+  margin-bottom: 0px;
+  border-radius: 10px 10px 10px 10px;
+}
+.carte__resto__img {
+  display: block;
+  max-height: 175px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.carte__resto__new {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #027055;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.carte__resto__format {
+  background-color: white;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0 0 10px 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
