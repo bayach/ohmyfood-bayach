@@ -20,6 +20,7 @@
         font-weight: 700;
     }  
 }
+/*texte pour reservation resto*/
 .titrehome
 {
     padding: 40px 30px 55px 30px;
@@ -39,4 +40,88 @@
         margin-bottom: 30px;
         width: 80%;
     }
+}
+/*section fonctionnement reservation plats dans le resto de notre choix*/
+.fonctionnement
+{
+    padding: 55px 20px 45px 20px;
+        &__titre{
+            margin-bottom: 30px;
+        }
+       
+}
+.etape
+{
+        height: 75px;
+        display: flex;
+        align-items: center;
+        background-color: #f6f6f6;
+        border-radius: 10px 10px 10px 10px;
+        padding: 0 70px 0 30px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        &__icone{
+            margin-right: 15px;
+            color: #726b6b;
+        }
+        &__num{
+            height: 25px;
+            width: 25px;
+            border-radius: 50%;
+            background-color: $primaire-couleur;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            left: -45px;
+            color: white;
+        }
+          
+}
+/*section cartes restauarants*/
+.resto
+{
+    padding:  55px 20px 45px 20px;
+    background-color: rgb(230, 227, 227);
+    &__titre{
+      margin-bottom: 30px;
+    }
+}
+.carte__resto
+{
+    position: relative;
+    height: 250px;
+    margin-bottom: 0px;
+    border-radius: 10px 10px 10px 10px;
+      
+      &__img
+      {
+          display: block;
+          max-height: 175px;
+          width: 100%;
+          border-radius: 10px 10px 0 0;
+          object-fit: cover;
+      }
+      &__new
+      {
+        display: inline-block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 80px;
+        background-color: $tertiaire-couleurr;
+        color: #027055;
+        position: absolute;
+        right: 10px;
+        top: 15px;
+    }
+      &__format
+      {
+          background-color: white;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          border-radius: 0 0 10px 10px;
+      }
 }

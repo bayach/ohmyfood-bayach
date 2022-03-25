@@ -1,6 +1,6 @@
 @import "./abstracts/mixins.scss", "./abstracts/variables.scss";
-@import "./Base/typography", "./Base/reset";
-@import "./components/buttons.scss";
+@import "./Base/typography.scss", "./base/reset.scss";
+@import "./components/buttons.scss","./components/coeur.scss";
 @import "./layout/footer.scss","./layout/forms.scss","./layout/grid.scss","./layout/header.scss","./layout/navigation.scss","./layout/sidebar.scss";
 @import "./pages/home.scss";
 @import "./themes/admin.scss","./themes/theme.scss";
