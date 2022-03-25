@@ -2,7 +2,7 @@
 #format_page
 {
     margin: auto;
-    width: 400px;
+    width: 100%;
 }
 /*localisation resto accueil*/
 .location
@@ -12,6 +12,7 @@
     text-align: center;
     justify-content: center;
     align-items: center;
+    padding: 20px;
     &__icon{
         margin-right: 15px
     }
@@ -32,13 +33,13 @@
         margin: auto;
         margin-bottom: 20px;
         font-weight: bolder;
-        width: 60%;
+        width: 70%;
     }
     &__texte{
         margin: auto;
         text-align: center;
         margin-bottom: 30px;
-        width: 80%;
+        width: 100%;
     }
 }
 /*section fonctionnement reservation plats dans le resto de notre choix*/
@@ -123,5 +124,7 @@
           display: flex;
           justify-content: space-between;
           border-radius: 0 0 10px 10px;
+          color: black;
       }
 }
+

@@ -1,0 +1,57 @@
+/*pied de page*/
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer__titre {
+  font-size: 24px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+}
+.footer__texte {
+  color: white;
+}
+.footer__icone {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/*format logo ohmyfood*/
+.logohome {
+  height: 50px;
+  width: 300px;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.logohome__img {
+  margin: auto;
+  width: 250px;
+}
+
+#format_page {
+  margin: auto;
+  width: 100%;
+}
+
+/*header page resto*/
+header {
+  padding: 20px 25px 10px 25px;
+  display: flex;
+  align-items: center;
+}
+
+.photo__header {
+  max-height: 250px;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=style-resto.css.map */

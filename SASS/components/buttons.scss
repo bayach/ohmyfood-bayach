@@ -4,7 +4,7 @@
     display: block;
     width: max-content;
     margin: auto;
-    background-color: $primaire-couleur;  
+    background: linear-gradient($secondaire-couleur, $primaire-couleur);
     color: white;
     border-radius: 30px;
     padding: 15px 20px;

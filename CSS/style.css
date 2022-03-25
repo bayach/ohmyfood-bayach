@@ -1,7 +1,7 @@
 @charset "UTF-8";
-/*Annulation decoration texte bouton*/
-a {
-  text-decoration: none;
+/*texte et paragraphe en roboto*/
+* {
+  font-family: "Roboto", sans-serif;
 }
 
 /* annulation paramètre sur toutes les balises*/
@@ -20,7 +20,7 @@ a {
   display: block;
   width: max-content;
   margin: auto;
-  background-color: #9356DC;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: white;
   border-radius: 30px;
   padding: 15px 20px;
@@ -37,6 +37,29 @@ a {
   color: #FF79DA;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
+}
+
+/*pied de page*/
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer__titre {
+  font-size: 24px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 15px;
+}
+.footer__texte {
+  color: white;
+}
+.footer__icone {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
 }
 
 /*format logo ohmyfood*/
@@ -57,7 +80,7 @@ a {
 /*format de page*/
 #format_page {
   margin: auto;
-  width: 400px;
+  width: 100%;
 }
 
 /*localisation resto accueil*/
@@ -67,6 +90,7 @@ a {
   text-align: center;
   justify-content: center;
   align-items: center;
+  padding: 20px;
 }
 .location__icon {
   margin-right: 15px;
@@ -87,13 +111,13 @@ a {
   margin: auto;
   margin-bottom: 20px;
   font-weight: bolder;
-  width: 60%;
+  width: 70%;
 }
 .titrehome__texte {
   margin: auto;
   text-align: center;
   margin-bottom: 30px;
-  width: 80%;
+  width: 100%;
 }
 
 /*section fonctionnement reservation plats dans le resto de notre choix*/
@@ -172,6 +196,7 @@ a {
   display: flex;
   justify-content: space-between;
   border-radius: 0 0 10px 10px;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

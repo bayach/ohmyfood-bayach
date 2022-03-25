@@ -1,0 +1,19 @@
+@import "../layout/footer.scss","../layout/header.scss";
+#format_page
+{
+    margin: auto;
+    width: 100%;
+}
+/*header page resto*/
+header
+{
+    padding: 20px 25px 10px 25px;
+    display: flex;
+    align-items: center;
+}
+.photo__header
+{
+    max-height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
