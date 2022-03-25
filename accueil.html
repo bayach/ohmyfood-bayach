@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style-accueil.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
         <link rel="stylesheet" href="/CSS/normalize.css"/>
         <title>Ohmyfood</title>
@@ -12,21 +12,20 @@
             <!-- En-tête de la page Ohmyfood-->
             <header > 
                 <!--LOGO Ohmyfood-->
-                <div id="logo">
-                    <img src="images/logo/ohmyfood.png" alt="Logo Ohmyfood" /> 
+                <div class="logohome">
+                    <img class="logohome__img" src="images/logo/ohmyfood.png"  alt="Logo Ohmyfood"  /> 
                 </div>       
             </header>
-
-            <div id="location">
-                <!--Location restaurant-->    
-                <i class="fa-solid fa-location-dot"></i>
-                <p>Paris, Belleville</p>
-            </div>
+                <!--Localisationtion restaurant-->
+            <section class="location">    
+                <i class="fa-solid fa-location-dot location__icon"></i>
+                <p class="location__texte">Paris, Belleville</p>
+            </section>
                 <!--Titre de la page-->
-            <section id="Titre">
-                <h1>Réservez le menu qui vous convient</h1>
-                <p>Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
-                <a href="#"><div class="mainButton">Explorer nos restaurants</div></a>
+            <section class="titrehome">
+                <h1 class="titrehome__titre">Réservez le menu qui vous convient</h1>
+                <p class="titrehome__texte">Découvrez des restaurants d'exception, séléctionnés par nos soins</p>
+                <a href="#"><div class="button-home">Explorer nos restaurants</div></a>
             </section>
                 <!--liste étape de reservation-->
             <section id="fonctionnement">

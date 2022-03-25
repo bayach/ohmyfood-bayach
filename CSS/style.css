@@ -1,3 +1,73 @@
+a {
+  text-decoration: none;
+}
 
+/*variable couleur pages*/
+.button-home {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+/*format logo ohmyfood*/
+.logohome {
+  height: 50px;
+  width: 300px;
+  padding: 20px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.logohome__img {
+  margin: auto;
+  width: 250px;
+}
+
+/*format de page*/
+#format_page {
+  margin: auto;
+  width: 400px;
+}
+
+/*localisation resto accueil*/
+.location {
+  display: flex;
+  background-color: #d6d3d3;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.location__icon {
+  margin-right: 15px;
+}
+.location__texte {
+  display: inline-block;
+  font-weight: 700;
+}
+
+.titrehome {
+  padding: 40px 30px 55px 30px;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.titrehome__titre {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  width: 60%;
+}
+.titrehome__texte {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 80%;
+}
 
 /*# sourceMappingURL=style.css.map */
