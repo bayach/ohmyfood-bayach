@@ -33,9 +33,7 @@ a {
   color: grey;
 }
 .carte__resto__coeur:hover {
-  background: #FF79DA;
   color: #FF79DA;
-  -webkit-text-fill-color: transparent;
   font-weight: bold;
 }
 

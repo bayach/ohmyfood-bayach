@@ -4,10 +4,8 @@
     font-size: 20px;
     color: grey;
     &:hover
-    {
-        background: $secondaire-couleur;
+    { 
         color: $secondaire-couleur;
-        -webkit-text-fill-color: transparent;
         font-weight: bold;
     }
 
