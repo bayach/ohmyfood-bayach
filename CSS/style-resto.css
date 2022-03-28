@@ -105,7 +105,7 @@ header {
   overflow: hidden;
 }
 .menu__texte {
-  width: 90%;
+  width: 70%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
