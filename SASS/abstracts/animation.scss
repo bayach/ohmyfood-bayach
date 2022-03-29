@@ -2,9 +2,20 @@
 .menu:hover .menu__icone
 {
     width: 70px;
-    transform: rotate(-360deg);
+    
+}
+.menu__icone__ok
+{
+    transition: transform 2s;
 }
 .menu:hover .menu__icone__ok
-{
+{ 
     transform: rotate(-360deg);
+}
+
+/*animation apparition menu*/
+@keyframes anim_menu 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
