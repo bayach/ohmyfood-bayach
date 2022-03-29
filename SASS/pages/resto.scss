@@ -1,7 +1,8 @@
-@import "../base/reset.scss";
+@import "../base/reset.scss" ; 
+@import"../base/typography.scss";
 @import "../layout/footer.scss","../layout/header.scss";
 @import "../abstracts/variables.scss";
-@import "../components/buttons.scss";
+@import "../components/buttons.scss","../components/coeur.scss";
 #format_page
 {
     margin: auto;
@@ -10,7 +11,7 @@
 /*header page resto*/
 header
 {
-    padding: 20px 25px 10px 25px;
+    padding: 10px 25px 10px 25px;
     display: flex;
     align-items: center;
 }
@@ -35,7 +36,15 @@ header
         justify-content: space-between;
         margin-bottom: 45px;
     }
+    h2
+    {
+        
+        margin-bottom: 20px;
+        width: min-content;
+        border-bottom: 2px solid $tertiaire-couleurr;
+    }
 }
+
 .menu
 {
     height: 70px;

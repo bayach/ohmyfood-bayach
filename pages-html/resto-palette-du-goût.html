@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="css/style-resto.css">
+        <link rel="stylesheet" href="../CSS/style-resto.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&family=Shrikhand&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" >
         <link rel="stylesheet" href="/CSS/normalize.css"/>
@@ -13,7 +13,7 @@
             
             <!-- En-tête de la page Ohmyfood-->
             <header > 
-                <a href="accueil.html"><i class="fa-solid fa-arrow-left"></i></a>
+                <a href="../accueil.html"><i class="fa-solid fa-arrow-left"></i></a>
                 <!--LOGO Ohmyfood-->
                 <div class="logohome">
                     <img class="logohome__img" src="images/logo/ohmyfood.png"  alt="Logo Ohmyfood"  /> 
@@ -27,7 +27,7 @@
             <section class="resto">
                 <div class="resto__nom">
                     <div><h1>La palette du goût</h1></div> 
-                    <div><i class="fa-regular fa-heart"></i></div>
+                    <div><i class="fa-regular fa-heart resto__icone"></i></div>
                 </div>
                 <!-- listes des Entrées -->
                 <article class="entrees">
@@ -145,9 +145,7 @@
                     </div>
                 </article>
                     <!--Bouton commande-->
-                <div class="commande-btn">
-                    <a href="#">Commander</a>
-                </div>
+                    <a href="#"><div class="commande-btn">Commander</div></a>
             </section>
            
            <!--****************Pied de page "footer"*******************-->
@@ -156,7 +154,7 @@
                 <nav class="footer__nav">
                     <a class="footer__texte" href="#">
                         <i class="fa-solid fa-utensils footer__icone"></i>
-                        Proposer un restaurant 
+                        <span>Proposer un restaurant</span>  
                     </a>
                     <a class="footer__texte" href="#">
                         <i class="fas fa-hands-helping footer__icone"></i>
