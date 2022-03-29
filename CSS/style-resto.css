@@ -79,6 +79,16 @@ h1 {
   width: 170px;
 }
 
+/*animation selection plat*/
+.menu:hover .menu__icone {
+  width: 70px;
+  transform: rotate(-360deg);
+}
+
+.menu:hover .menu__icone__ok {
+  transform: rotate(-360deg);
+}
+
 /*bouton explorer page accueil*/
 .button-home, .commande-btn {
   display: block;
@@ -147,12 +157,13 @@ header {
   background-color: white;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 15px;
   overflow: hidden;
 }
 .menu__texte {
-  width: 70%;
+  width: 90%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -162,14 +173,15 @@ header {
 }
 .menu__icone {
   height: 70px;
-  width: 60px;
+  width: 0px;
   background-color: #99E2D0;
-  margin-left: 25px;
-  margin-right: -70px;
   border-radius: 0 10px 10px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  color: white;
+  margin-left: 25px;
+  transition: width 2s;
 }
 
 /*# sourceMappingURL=style-resto.css.map */

@@ -1,7 +1,7 @@
 @import "../base/reset.scss" ; 
 @import"../base/typography.scss";
 @import "../layout/footer.scss","../layout/header.scss";
-@import "../abstracts/variables.scss";
+@import "../abstracts/variables.scss","../abstracts/animation.scss";
 @import "../components/buttons.scss","../components/coeur.scss";
 #format_page
 {
@@ -38,7 +38,6 @@ header
     }
     h2
     {
-        
         margin-bottom: 20px;
         width: min-content;
         border-bottom: 2px solid $tertiaire-couleurr;
@@ -53,12 +52,13 @@ header
     background-color: white;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     border-radius: 10px;
     margin-bottom: 15px;
     overflow: hidden; 
     &__texte
     {
-        width: 70%;
+        width: 90%;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -68,15 +68,18 @@ header
         margin-left: 10px;
     }
     &__icone
-    {
+    {   
         height: 70px;
-        width: 60px;
+        width: 0px;  
         background-color: $tertiaire-couleurr ;
-        margin-left: 25px;
-        margin-right: -70px;
         border-radius: 0 10px 10px 0;
         display: flex;
         align-items: center;
         justify-content: center;
+        color: white;
+        margin-left: 25px;
+        transition: width 2s;    
+        
     }
+
 }
