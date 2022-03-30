@@ -118,6 +118,10 @@ h1 {
   font-weight: bold;
   box-shadow: 2px 2px 10px #999998;
 }
+.button-home:hover, .commande-btn:hover {
+  box-shadow: 10px 10px 10px #818180;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
 
 /*Animation coeur resto favoris page accueil */
 .carte__resto__coeur, .resto__icone {
@@ -177,7 +181,6 @@ header {
   justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 15px;
-  overflow: hidden;
   animation-name: anim_menu;
   animation-duration: 5s;
 }
@@ -201,6 +204,20 @@ header {
   color: white;
   margin-left: 25px;
   transition: width 2s;
+}
+
+/*responsive pages resto*/
+@media screen and (min-width: 1024px) {
+  .conteneur {
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    width: 100%;
+  }
+
+  .desserts, .plats, .entrees {
+    min-width: 250px;
+  }
 }
 
 /*# sourceMappingURL=style-resto.css.map */

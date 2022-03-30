@@ -2,8 +2,9 @@
 #format_page
 {
     margin: auto;
-    width: 100%;
     min-width: 280px;
+    width: 100%;
+  
 }
 header
 {
@@ -42,6 +43,7 @@ header
         font-weight: bolder;
         width: 70%;
         font-size: 24px;
+        font-family: 'Roboto', sans-serif;
     }
     &__texte{
         margin: auto;
@@ -152,4 +154,54 @@ header
           }
       }
 }
+
+/*responsive page accueil*/
+@media screen and (min-width: 720px) and (max-width: 1023px)
+{
+    .carte__resto,.resto__titre,.fonctionnement
+    {
+        max-width: 720px;
+        margin: auto;
+    }
+}
+@media screen and (min-width: 1024px)
+{
+    .carte__resto,.resto__titre,.fonctionnement
+    {
+        width: 90%;
+        margin: auto;
+        
+    }
+    .fonctionnement__titre, .resto__titre
+    {
+        text-align: center;
+        text-shadow: 2px 2px 2px #d3cdcd;
+    
+    }
+    
+    .liste
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .section__carte__resto
+    {
+        margin-top: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .carte__resto
+    {
+        width: 450px;
+        margin-bottom: 20px;
+    }
+    .etape
+    {
+        width: 100%;
+        margin-right: 20px;
+    }
+}
+
 

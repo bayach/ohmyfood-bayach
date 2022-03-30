@@ -55,7 +55,6 @@ header
     justify-content: space-between;
     border-radius: 10px;
     margin-bottom: 15px;
-    overflow: hidden; 
     animation-name: anim_menu;
     animation-duration: 5s;
     &__texte
@@ -84,4 +83,22 @@ header
         
     }
 
+}
+
+/*responsive pages resto*/
+@media screen and (min-width: 1024px)
+{
+  
+    .conteneur
+    {
+        display: flex;
+        justify-content: space-around;
+        margin: auto;
+        width: 100%;
+        
+    }
+    .desserts,.plats,.entrees
+    {
+        min-width: 250px;
+    }
 }

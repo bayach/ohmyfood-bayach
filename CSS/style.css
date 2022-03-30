@@ -4,6 +4,7 @@
   font-family: "Roboto", sans-serif;
 }
 
+/*taille texte*/
 p {
   font-size: 14px;
 }
@@ -18,6 +19,16 @@ h3 {
 
 h2 {
   font-size: 20px;
+}
+
+h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+}
+
+.menu__titre, .menu__detail {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* annulation paramètre sur toutes les balises*/
@@ -43,13 +54,17 @@ a {
   font-weight: bold;
   box-shadow: 2px 2px 10px #999998;
 }
+.button-home:hover, .commande-btn:hover {
+  box-shadow: 10px 10px 10px #818180;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
 
 /*Animation coeur resto favoris page accueil */
-.carte__resto__coeur {
+.carte__resto__coeur, .resto__icone {
   font-size: 25px;
   color: grey;
 }
-.carte__resto__coeur:hover {
+.carte__resto__coeur:hover, .resto__icone:hover {
   color: #FF79DA;
   font-weight: bold;
 }
@@ -84,7 +99,8 @@ a {
 .logohome {
   height: 40px;
   width: 100%;
-  padding: 20px 0px 10px 0px;
+  min-width: 200px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -98,8 +114,8 @@ a {
 /*format de page*/
 #format_page {
   margin: auto;
-  width: 100%;
   min-width: 280px;
+  width: 100%;
 }
 
 header {
@@ -137,6 +153,8 @@ header {
   margin-bottom: 20px;
   font-weight: bolder;
   width: 70%;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
 }
 .titrehome__texte {
   margin: auto;
@@ -234,6 +252,48 @@ header {
 }
 .carte__resto__format p {
   margin-top: 5px;
+}
+
+/*responsive page accueil*/
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .carte__resto, .resto__titre, .fonctionnement {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte__resto, .resto__titre, .fonctionnement {
+    width: 90%;
+    margin: auto;
+  }
+
+  .fonctionnement__titre, .resto__titre {
+    text-align: center;
+    text-shadow: 2px 2px 2px #d3cdcd;
+  }
+
+  .liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section__carte__resto {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .carte__resto {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .etape {
+    width: 100%;
+    margin-right: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
