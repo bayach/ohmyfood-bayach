@@ -23,3 +23,9 @@ h1{
     font-family: 'Shrikhand', sans-serif;
     font-size: 28px;
 }
+
+.menu__titre,.menu__detail
+{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
