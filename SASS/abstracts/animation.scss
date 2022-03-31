@@ -19,3 +19,27 @@
     0% {opacity:0;}
     100% {opacity:1;}
 }
+/*animation apparition menu*/
+@keyframes coeur 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/*animation loading spinner*/
+@keyframes loader 
+{
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  @keyframes spinner
+  {
+    from {width: 0px;}
+    to {width: 200px;}
+  }

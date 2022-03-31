@@ -5,6 +5,7 @@
     color: grey;
     &:hover
     { 
+        animation: coeur 1s ease-in-out;
         color: $secondaire-couleur;
         font-weight: bold;   
     }

@@ -1,4 +1,55 @@
 @charset "UTF-8";
+/*animation selection plat*/
+.menu:hover .menu__icone {
+  width: 70px;
+}
+
+.menu__icone__ok {
+  transition: transform 2s;
+}
+
+.menu:hover .menu__icone__ok {
+  transform: rotate(-360deg);
+}
+
+/*animation apparition menu*/
+@keyframes anim_menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation apparition menu*/
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation loading spinner*/
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spinner {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
 /*texte et paragraphe en roboto*/
 * {
   font-family: "Roboto", sans-serif;
@@ -21,7 +72,7 @@ h2 {
   font-size: 20px;
 }
 
-h1 {
+h1, .loader__titre span {
   font-family: "Shrikhand", sans-serif;
   font-size: 28px;
 }
@@ -65,6 +116,7 @@ a {
   color: grey;
 }
 .carte__resto__coeur:hover, .resto__icone:hover {
+  animation: coeur 1s ease-in-out;
   color: #FF79DA;
   font-weight: bold;
 }
@@ -109,6 +161,31 @@ a {
 .logohome__img {
   margin: auto;
   width: 170px;
+}
+
+.loader {
+  background: linear-gradient(#9356DC, #FF79DA);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 9999;
+  animation: loader 3s ease-in-out 3s forwards;
+}
+.loader__titre {
+  margin: auto;
+  margin-top: 50%;
+  text-align: center;
+}
+.loader__spinner {
+  height: 30px;
+  background-color: #99E2D0;
+  margin: auto;
+  margin-top: 10px;
+  animation: spinner 3s ease 1s both;
+}
+
+.loader__titre span {
+  animation: grow 1s ease-in-out infinite;
 }
 
 /*format de page*/
