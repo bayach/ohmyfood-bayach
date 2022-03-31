@@ -93,6 +93,11 @@ a {
   text-decoration: none;
 }
 
+/*supression le pointeur du loading spinner*/
+.loader {
+  pointer-events: none;
+}
+
 /*bouton explorer page accueil*/
 .button-home, .commande-btn {
   display: block;
@@ -168,20 +173,26 @@ a {
   width: 100%;
   height: 100%;
   position: fixed;
-  z-index: 9999;
+  top: 0;
+  left: 0;
+  z-index: 2;
   animation: loader 3s ease-in-out 3s forwards;
 }
 .loader__titre {
+  top: 48%;
+  position: relative;
   margin: auto;
-  margin-top: 50%;
+  background-position: center;
   text-align: center;
 }
 .loader__spinner {
+  position: relative;
   height: 30px;
   background-color: #99E2D0;
   margin: auto;
   margin-top: 10px;
   animation: spinner 3s ease 1s both;
+  top: 52%;
 }
 
 .loader__titre span {

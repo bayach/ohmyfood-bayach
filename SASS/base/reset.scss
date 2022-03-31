@@ -10,3 +10,8 @@ a
 {
     text-decoration: none;
 }
+/*supression le pointeur du loading spinner*/
+.loader
+{
+    pointer-events: none;
+}
