@@ -55,8 +55,7 @@ header
     justify-content: space-between;
     border-radius: 10px;
     margin-bottom: 15px;
-    animation-name: anim_menu;
-    animation-duration: 5s;
+    
     &__texte
     {
         width: 90%;
@@ -79,12 +78,35 @@ header
         justify-content: center;
         color: white;
         margin-left: 25px;
-        transition: width 2s;    
-        
+        transition: width 2s, opacity 2s;      
     }
-
+}
+.conteneur h2
+{
+    animation: menu-titre 3s ease-in-out forwards;
+    opacity : 0;
 }
 
+#menu_1
+{
+    animation: menu-1 3s ease-in-out 1s forwards;
+    opacity : 0;
+}
+#menu_2
+{
+    animation: menu-2 3s ease-in-out 2s forwards;
+    opacity : 0;
+}
+#menu_3
+{
+    animation: menu-3 3s ease-in-out 3s forwards;
+    opacity : 0;
+}
+#menu_4
+{
+    animation: menu-3 3s ease-in-out 3s forwards;
+    opacity : 0;
+}
 /*responsive pages resto*/
 @media screen and (min-width: 1024px)
 {
