@@ -10,6 +10,11 @@ a {
   text-decoration: none;
 }
 
+/*supression le pointeur du loading spinner*/
+.loader {
+  pointer-events: none;
+}
+
 /*texte et paragraphe en roboto*/
 * {
   font-family: "Roboto", sans-serif;
@@ -87,18 +92,21 @@ h1, .loader__titre span {
 /*animation selection plat*/
 .menu:hover .menu__icone {
   width: 70px;
+  opacity: 1;
 }
 
 .menu__icone__ok {
-  transition: transform 2s;
+  opacity: 0;
+  transition: transform 2s, opacity 2s;
 }
 
 .menu:hover .menu__icone__ok {
   transform: rotate(-360deg);
+  opacity: 1;
 }
 
 /*animation apparition menu*/
-@keyframes anim_menu {
+@keyframes menu-titre {
   0% {
     opacity: 0;
   }
@@ -106,7 +114,39 @@ h1, .loader__titre span {
     opacity: 1;
   }
 }
-/*animation apparition menu*/
+@keyframes menu-1 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-3 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes menu-4 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation coeur*/
 @keyframes coeur {
   0% {
     opacity: 0;
@@ -211,8 +251,6 @@ header {
   justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 15px;
-  animation-name: anim_menu;
-  animation-duration: 5s;
 }
 .menu__texte {
   width: 90%;
@@ -233,7 +271,32 @@ header {
   justify-content: center;
   color: white;
   margin-left: 25px;
-  transition: width 2s;
+  transition: width 2s, opacity 2s;
+}
+
+.conteneur h2 {
+  animation: menu-titre 3s ease-in-out forwards;
+  opacity: 0;
+}
+
+#menu_1 {
+  animation: menu-1 3s ease-in-out 1s forwards;
+  opacity: 0;
+}
+
+#menu_2 {
+  animation: menu-2 3s ease-in-out 2s forwards;
+  opacity: 0;
+}
+
+#menu_3 {
+  animation: menu-3 3s ease-in-out 3s forwards;
+  opacity: 0;
+}
+
+#menu_4 {
+  animation: menu-3 3s ease-in-out 3s forwards;
+  opacity: 0;
 }
 
 /*responsive pages resto*/

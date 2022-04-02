@@ -2,24 +2,47 @@
 .menu:hover .menu__icone
 {
     width: 70px;
+    opacity: 1;
     
 }
 .menu__icone__ok
 {
-    transition: transform 2s;
+    opacity: 0;
+    transition: transform 2s, opacity 2s;
 }
 .menu:hover .menu__icone__ok
 { 
     transform: rotate(-360deg);
+    opacity: 1;
 }
 
 /*animation apparition menu*/
-@keyframes anim_menu 
+@keyframes menu-titre
 {
     0% {opacity:0;}
     100% {opacity:1;}
 }
-/*animation apparition menu*/
+@keyframes menu-1 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes menu-2 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes menu-3 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@keyframes menu-4 
+{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+/*animation coeur*/
 @keyframes coeur 
 {
     0% {opacity:0;}

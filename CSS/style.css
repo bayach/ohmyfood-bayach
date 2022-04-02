@@ -10,6 +10,7 @@
 
 .menu:hover .menu__icone__ok {
   transform: rotate(-360deg);
+  opacity: 1;
 }
 
 /*animation apparition menu*/
