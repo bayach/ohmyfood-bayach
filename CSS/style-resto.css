@@ -280,22 +280,22 @@ header {
 }
 
 #menu_1 {
-  animation: menu-1 3s ease-in-out 1s forwards;
+  animation: menu-1 3s ease-in-out 0.5s forwards;
   opacity: 0;
 }
 
 #menu_2 {
-  animation: menu-2 3s ease-in-out 2s forwards;
+  animation: menu-2 3s ease-in-out 1s forwards;
   opacity: 0;
 }
 
 #menu_3 {
-  animation: menu-3 3s ease-in-out 3s forwards;
+  animation: menu-3 3s ease-in-out 1.5s forwards;
   opacity: 0;
 }
 
 #menu_4 {
-  animation: menu-3 3s ease-in-out 3s forwards;
+  animation: menu-3 3s ease-in-out 2s forwards;
   opacity: 0;
 }
 
