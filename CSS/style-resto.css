@@ -121,6 +121,12 @@ h1, .loader__titre span {
   100% {
     opacity: 1;
   }
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
 }
 @keyframes menu-2 {
   0% {
@@ -128,6 +134,12 @@ h1, .loader__titre span {
   }
   100% {
     opacity: 1;
+  }
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
   }
 }
 @keyframes menu-3 {
@@ -137,6 +149,12 @@ h1, .loader__titre span {
   100% {
     opacity: 1;
   }
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
+  }
 }
 @keyframes menu-4 {
   0% {
@@ -144,6 +162,12 @@ h1, .loader__titre span {
   }
   100% {
     opacity: 1;
+  }
+  from {
+    top: 20px;
+  }
+  to {
+    top: 0px;
   }
 }
 /*animation coeur*/
@@ -251,6 +275,7 @@ header {
   justify-content: space-between;
   border-radius: 10px;
   margin-bottom: 15px;
+  position: relative;
 }
 .menu__texte {
   width: 90%;
@@ -275,27 +300,27 @@ header {
 }
 
 .conteneur h2 {
-  animation: menu-titre 3s ease-in-out forwards;
+  animation: menu-titre 1s ease-in-out forwards;
   opacity: 0;
 }
 
 #menu_1 {
-  animation: menu-1 3s ease-in-out 0.5s forwards;
+  animation: menu-1 1s ease-in-out 0.5s forwards;
   opacity: 0;
 }
 
 #menu_2 {
-  animation: menu-2 3s ease-in-out 1s forwards;
+  animation: menu-2 1s ease-in-out 1s forwards;
   opacity: 0;
 }
 
 #menu_3 {
-  animation: menu-3 3s ease-in-out 1.5s forwards;
+  animation: menu-3 1s ease-in-out 1.5s forwards;
   opacity: 0;
 }
 
 #menu_4 {
-  animation: menu-3 3s ease-in-out 2s forwards;
+  animation: menu-3 1s ease-in-out 2s forwards;
   opacity: 0;
 }
 
