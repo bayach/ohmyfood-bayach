@@ -1,0 +1,13 @@
+/*Animation coeur resto favoris page accueil */
+.carte__resto__coeur,.resto__icone
+{
+    font-size: 25px;
+    color: grey;
+    &:hover
+    { 
+        animation: coeur 1s ease-in-out;
+        color: $secondaire-couleur;
+        font-weight: bold;   
+    }
+
+}

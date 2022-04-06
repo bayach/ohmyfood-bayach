@@ -1,0 +1,388 @@
+@charset "UTF-8";
+/*animation selection plat*/
+.menu:hover .menu__icone {
+  width: 70px;
+}
+
+.menu__icone__ok {
+  transition: transform 2s;
+}
+
+.menu:hover .menu__icone__ok {
+  transform: rotate(-360deg);
+  opacity: 1;
+}
+
+/*animation apparition menu*/
+@keyframes anim_menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation apparition menu*/
+@keyframes coeur {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*animation loading spinner*/
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes spinner {
+  from {
+    width: 0px;
+  }
+  to {
+    width: 200px;
+  }
+}
+/*texte et paragraphe en roboto*/
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+/*taille texte*/
+p {
+  font-size: 14px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h1, .loader__titre span {
+  font-family: "Shrikhand", sans-serif;
+  font-size: 28px;
+}
+
+.menu__titre, .menu__detail {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* annulation paramètre sur toutes les balises*/
+* {
+  margin: 0px;
+  padding: 0;
+}
+
+/*annulation decaration texte cliquable*/
+a {
+  text-decoration: none;
+}
+
+/*supression le pointeur du loading spinner*/
+.loader {
+  pointer-events: none;
+}
+
+/*bouton explorer page accueil*/
+.button-home, .commande-btn {
+  display: block;
+  width: max-content;
+  margin: auto;
+  background: linear-gradient(#FF79DA, #9356DC);
+  color: white;
+  border-radius: 30px;
+  padding: 15px 20px;
+  font-weight: bold;
+  box-shadow: 2px 2px 10px #999998;
+}
+.button-home:hover, .commande-btn:hover {
+  box-shadow: 10px 10px 10px #818180;
+  background: linear-gradient(#9356DC, #FF79DA);
+}
+
+/*Animation coeur resto favoris page accueil */
+.carte__resto__coeur, .resto__icone {
+  font-size: 25px;
+  color: grey;
+}
+.carte__resto__coeur:hover, .resto__icone:hover {
+  animation: coeur 1s ease-in-out;
+  color: #FF79DA;
+  font-weight: bold;
+}
+
+/*pied de page*/
+.footer {
+  background-color: #353535;
+  padding: 25px;
+}
+.footer__titre {
+  font-size: 20px;
+  font-family: "Shrikhand", sans-serif;
+  color: white;
+  margin-bottom: 10px;
+}
+.footer__texte {
+  color: white;
+}
+.footer__texte span {
+  margin-left: 5px;
+}
+.footer__icone {
+  margin-right: 10px;
+  font-size: 15px;
+}
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+}
+
+/*format logo ohmyfood*/
+.logohome {
+  height: 40px;
+  width: 100%;
+  min-width: 200px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.logohome__img {
+  margin: auto;
+  width: 170px;
+}
+
+.loader {
+  background: linear-gradient(#9356DC, #FF79DA);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  animation: loader 3s ease-in-out 3s forwards;
+}
+.loader__titre {
+  top: 48%;
+  position: relative;
+  margin: auto;
+  background-position: center;
+  text-align: center;
+}
+.loader__spinner {
+  position: relative;
+  height: 30px;
+  background-color: #99E2D0;
+  margin: auto;
+  margin-top: 10px;
+  animation: spinner 3s ease 1s both;
+  top: 52%;
+}
+
+.loader__titre span {
+  animation: grow 1s ease-in-out infinite;
+}
+
+/*format de page*/
+#format_page {
+  margin: auto;
+  min-width: 280px;
+  width: 100%;
+}
+
+header {
+  margin-bottom: 5px;
+  height: 100%;
+  box-shadow: 0px 0px 30px #999998;
+}
+
+/*localisation resto accueil*/
+.location {
+  display: flex;
+  background-color: #e2e0e0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.location__icon {
+  margin-right: 15px;
+}
+.location__texte {
+  display: inline-block;
+  font-weight: 700;
+}
+
+/*texte pour reservation resto*/
+.titrehome {
+  padding: 40px 30px 55px 30px;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.titrehome__titre {
+  text-align: center;
+  margin: auto;
+  margin-bottom: 20px;
+  font-weight: bolder;
+  width: 70%;
+  font-size: 24px;
+  font-family: "Roboto", sans-serif;
+}
+.titrehome__texte {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+/*section fonctionnement reservation plats dans le resto de notre choix*/
+.fonctionnement {
+  padding: 55px 20px 45px 20px;
+}
+.fonctionnement__titre {
+  margin-bottom: 30px;
+}
+
+.etape {
+  box-shadow: 2px 2px 20px #999998;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  border-radius: 20px 20px 20px 20px;
+  padding: 0 10px 0 15px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+.etape:hover {
+  background-color: #e6e6e6;
+}
+.etape:hover .etape__icone {
+  color: #9356DC;
+}
+.etape__icone {
+  margin-right: 25px;
+  color: #726b6b;
+  font-size: 20px;
+}
+.etape__num {
+  height: 25px;
+  min-width: 25px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  left: -27px;
+  color: white;
+}
+
+/*section cartes restauarants*/
+.resto {
+  padding: 45px 20px 45px 20px;
+  background-color: #e6e3e3;
+}
+.resto__titre {
+  margin-bottom: 30px;
+}
+
+.carte__resto {
+  position: relative;
+  height: 250px;
+  margin-bottom: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+.carte__resto__img {
+  display: block;
+  max-height: 170px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+.carte__resto__new {
+  display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 80px;
+  background-color: #99E2D0;
+  color: #027055;
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+.carte__resto__format {
+  background-color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0 0 10px 10px;
+  color: black;
+}
+.carte__resto__format p {
+  margin-top: 5px;
+}
+
+/*responsive page accueil*/
+@media screen and (min-width: 720px) and (max-width: 1023px) {
+  .carte__resto, .resto__titre, .fonctionnement {
+    max-width: 720px;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .carte__resto, .resto__titre, .fonctionnement {
+    width: 90%;
+    margin: auto;
+  }
+
+  .fonctionnement__titre, .resto__titre {
+    text-align: center;
+    text-shadow: 2px 2px 2px #d3cdcd;
+  }
+
+  .liste {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .section__carte__resto {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .carte__resto {
+    width: 450px;
+    margin-bottom: 20px;
+  }
+
+  .etape {
+    width: 100%;
+    margin-right: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

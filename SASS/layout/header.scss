@@ -1,0 +1,17 @@
+/*format logo ohmyfood*/
+.logohome
+{
+    height: 40px;
+    width: 100%;
+    min-width: 200px;
+    padding: 10px 0px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+    &__img{
+        margin: auto;
+        width: 170px;
+    }
+}
